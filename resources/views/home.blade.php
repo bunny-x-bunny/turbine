@@ -66,7 +66,7 @@
 
   <div class="flex flex-row mt-20 lg:space-x-8 max-lg:flex-col max-lg:mt-10">
     <div class="basis-3/5 box overflow-hidden">
-      <img class="w-full object-cover max-lg:max-h-96 max-sm:max-h-72" src="{{asset('images/pexels-marcin-jozwiak-199600-3732951.png')}}">
+      <img class="w-full object-cover max-lg:max-h-96 max-sm:max-h-72" src="{{asset('images/pexels-marcin-jozwiak-199600-3732951.jpg')}}">
     </div>
     <div class="basis-2/5 box radial-gradient p-8 max-lg:mt-8 max-sm:px-4">
       <h3 class="text-white text-4xl font-bold mb-6">О Нас</h3>
@@ -81,7 +81,7 @@
   <div class="flex flex-row mt-20 space-x-12 projects-cont">
     <div class="basis-3/5">
       <h2 class="text-3xl font-extrabold">ТЕКУЩИЕ <br><b class="text-gradient">ЭНЕРГЕТИЧЕСКИЕ</b> ПРОЕКТЫ</h2>
-      <img class="w-full box" src="{{asset('images/projects.png')}}">
+      <img class="w-full box" src="{{asset('images/projects.jpg')}}">
     </div>
     <div class="basis-2/5">
       <h3 class="text-2xl font-bold mb-6">Страны и города:</h3>
@@ -109,7 +109,7 @@
 
   <h2 class="text-4xl mt-20 mb-10">БИШКЕКСКАЯ ТЭЦ-2 <b class="text-gradient-y">/ РЕШЕНИЕ</b></h2>
   <div class="box relative">
-    <img src="{{asset('images/i (3).png')}}">
+    <img src="{{asset('images/i (3).jpg')}}">
     <img src="{{asset('images/play-circle.svg')}}" class="play-circle">
   </div>
 
