@@ -8,6 +8,7 @@ $gradientcol1: #3887db;
 $gradientcol2: #1e4977;
 $text_col: #5f5f5f;
 $text_col_dark: #1f1f1f;
+$gradientcol50: color.mix($gradientcol1, $gradientcol2, 50%);
 
 body {
   color: $text_col;
@@ -91,17 +92,29 @@ h1, h2, h3, b {
 }
 
 .configuration {
+  & > img {
+    max-height: 600px;
+  }
   .item {
     font-weight: 300;
     color: $text_col_dark;
     font-size: 1.25rem;
     display: flex;
     align-items: center;
+    text-align: left;
     & > img {
       width: 35px;
       height: 35px;
       margin-right: 12px;
     }
+  }
+}
+
+.problem {
+  img {
+    max-height: 500px;
+    height: 100%;
+    margin-left: auto;
   }
 }
 
@@ -159,6 +172,8 @@ h1, h2, h3, b {
   }
 }
 
+nav [aria-current="page"] { background: $gradientcol50; }
+
 footer {
   background: $text_col_dark;
   .container {
@@ -168,4 +183,93 @@ footer {
       font-weight: bold;
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .configuration > img { max-height: 538px; }
+  .agenda {
+    & > div {
+      &:nth-child(n+2) .num::before {
+        left: -145px;
+        top: -17px;
+        width: 163px;
+      };
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .configuration > :nth-child(1) { z-index: 1; }
+  .configuration > img {
+    max-height: 300px;
+    position: absolute;
+    right: 22px;
+    bottom: 19px;
+  }
+  .agenda > div:nth-child(n+2) .num::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .projects-cont {
+    flex-direction: column;
+    & > :nth-child(2) {
+      margin-left: 0!important;
+    }
+  }
+  .problem {
+    & > :nth-child(1) {
+      padding-left: 10px;
+    }
+    img {
+      max-height: unset;
+    }
+  }
+  .configuration {
+    & > :nth-child(1) { flex-basis: 100%; }
+    & > img {
+      opacity: .5
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .agenda {
+    grid-template-columns: repeat(2, minmax(0, 1fr))!important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .configuration > img {
+    max-height: 235px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .proposal {
+    grid-template-columns: repeat(1, minmax(0, 1fr))!important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #main > h1 {font-size: 2rem;  }
+  .configuration {
+    padding-right: 20px;
+    padding-left: 20px;
+    h2 { font-size: 1.75rem; line-height: 1; }
+    & > :nth-child(1) {padding-left: 0;}
+  }
+  .agenda {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    .max-md\:col-span-2 { grid-column: 1; }
+  }
+  .partners { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
 }
