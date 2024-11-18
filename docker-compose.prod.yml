@@ -12,7 +12,7 @@ services:
     extra_hosts:
         - 'host.docker.internal:host-gateway'
     ports:
-      - '${APP_PORT:-8081}:80'
+      - '127.0.0.1:8081:80'
     environment:
         WWWUSER: '${WWWUSER}'
         IGNITION_LOCAL_SITES_PATH: '${PWD}'
