@@ -1,7 +1,6 @@
 FROM node:23.1.0-alpine3.20 as vite-build
 WORKDIR /var/www/html
 COPY . .
-RUN mv -f .env.prod .env
 RUN npm install && npm run build && rm -rf node_modules
 
 
