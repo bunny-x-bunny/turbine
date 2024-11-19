@@ -1,7 +1,7 @@
-FROM node:23.1.0-alpine3.20 as vite-build
-WORKDIR /var/www/html
-COPY . .
-RUN npm install && npm run build && rm -rf node_modules
+#FROM node:23.1.0-alpine3.20 as vite-build
+#WORKDIR /var/www/html
+#COPY . .
+#RUN npm install && npm run build && rm -rf node_modules
 
 
 FROM dwchiang/nginx-php-fpm:8.3.12-fpm-alpine3.20-nginx-1.27.1 as final
@@ -40,12 +40,12 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 ENV WEB_DOCUMENT_ROOT /var/www/html/public
 ENV APP_ENV production
 WORKDIR /var/www/html
-COPY --from=vite-build /var/www/html ./
+#COPY --from=vite-build /var/www/html ./
 
-RUN composer install --no-interaction --optimize-autoloader --no-dev \
-  && php artisan config:cache \
-  && php artisan route:cache \
-  && php artisan view:cache \
-  && php artisan optimize
-
-RUN chown -R www-data:www-data ./storage
+#RUN composer install --no-interaction --optimize-autoloader --no-dev \
+#  && php artisan config:cache \
+#  && php artisan route:cache \
+#  && php artisan view:cache \
+#  && php artisan optimize
+#
+#RUN chown -R www-data:www-data ./storage
