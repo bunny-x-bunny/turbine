@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{config('app.name')}}</title>
+  <link rel="icon" type="image/jpeg" href="{{asset('images/logo.jpg')}}">
 
   <!-- Fonts -->
   @include('components/fonts')
@@ -219,7 +220,10 @@
       <p>+996 703 927 086</p>
     </div>
   </div>
-  <p class="pt-10 pb-4">Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</p>
+  <p class="pt-10 pb-4">© Orta Asya Investment Holding - 2024<br>
+    All rights reserved
+  </p>
+  <!--p class="pt-10 pb-4">Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</p-->
 </footer>
 
 </body>
