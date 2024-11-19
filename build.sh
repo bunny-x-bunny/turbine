@@ -6,12 +6,12 @@ docker run --rm -v "$(pwd)":/opt -w /opt \
     npm install && npm run build
 
 # install php deps
-docker run --rm -v "$(pwd)":/opt -w /opt \
-    laravelsail/php83-composer:latest \
-    composer install --no-interaction --optimize-autoloader --no-dev \
-      && php artisan config:cache \
-      && php artisan route:cache \
-      && php artisan view:cache \
-      && php artisan optimize
+docker-compose -f docker-compose.prod.yml exec laravel sh -c "
+    composer install --no-interaction --optimize-autoloader --no-dev &&
+      php artisan config:cache && 
+      php artisan route:cache && 
+      php artisan view:cache && 
+      php artisan optimize"
 
-docker-compose -f docker-compose.prod.yml restart
+# clear opcache
+docker-compose -f docker-compose.prod.yml restart laravel
