@@ -3,7 +3,7 @@
     <nav class="flex max-w-screen-lg space-x-10 mx-auto items-center justify-between text-sm">
       <a href="{{route('home')}}"><b>Главная</b></a>
       <a href="{{route('about')}}">О Нас</a>
-      <a href="#">Услуги</a>
+      <a href="{{route('projects')}}">Проекты</a>
       <a href="#">Наши технологии и возможности</a>
       <a href="#">Новости и обновления</a>
       <a href="#">Инвесторам</a>
