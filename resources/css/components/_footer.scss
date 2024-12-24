@@ -1,0 +1,14 @@
+@use '../colors';
+
+nav [aria-current="page"] { background: colors.$gradientcol50; }
+
+footer {
+  background: colors.$text_col_dark;
+  .container {
+    text-transform: uppercase;
+    p {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+  }
+}

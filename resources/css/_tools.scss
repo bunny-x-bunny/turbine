@@ -1,0 +1,53 @@
+@use 'sass:color';
+@use 'colors';
+
+@mixin linear-gradient($angle) {
+  background: color.mix(colors.$gradientcol1, colors.$gradientcol2, 50%);
+  background: linear-gradient($angle, colors.$gradientcol1, colors.$gradientcol2);
+}
+
+@mixin radial-gradient {
+  background: color.mix(colors.$gradientcol1, colors.$gradientcol2, 50%);
+  background: radial-gradient(circle, colors.$gradientcol1 0%, colors.$gradientcol2 78%);
+}
+.linear-gradient {
+  @include linear-gradient(90deg);
+}
+
+.text-gradient {
+  @include linear-gradient(90deg);
+  color: color.mix(colors.$gradientcol1, colors.$gradientcol2, 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-y {
+  @include linear-gradient(0deg);
+  color: color.mix(colors.$gradientcol1, colors.$gradientcol2, 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn {
+  @apply whitespace-nowrap focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2;
+  &.linear-gradient {
+    @apply text-white;
+    @include linear-gradient(90deg);
+    &:hover {
+      @include linear-gradient(135deg);
+    }
+  }
+}
+.box {
+  border-radius: 40px;
+  background: #fff;
+  &.radial-gradient {
+    @include radial-gradient;
+  }
+  &.shadowed {
+    box-shadow: 0 0 60px 0 rgba(0,0,0,0.2);
+  }
+  &.linear-gradient {
+    @include linear-gradient(90deg);
+  }
+}

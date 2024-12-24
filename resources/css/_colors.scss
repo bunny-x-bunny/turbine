@@ -1,0 +1,7 @@
+@use 'sass:color';
+
+$gradientcol1: #3887db;
+$gradientcol2: #1e4977;
+$text_col: #0C0C0C;
+$text_col_dark: #1f1f1f;
+$gradientcol50: color.mix($gradientcol1, $gradientcol2, 50%);
