@@ -1,0 +1,50 @@
+.page-projects {
+  .bg { position: absolute; z-index: -1; }
+
+  .initiative {
+    #initiative-bg-2 { z-index: -2; }
+    #initiative-zap {
+      @apply rounded-full bg-white p-4;
+      bottom: 18%;
+      translate: -42px 0;
+      scale: .9;
+    }
+    #initiative-grid-solution {
+      scale: 0.8;
+      right: 5px;
+      bottom: 37px;
+      border-radius: 24px;
+    }
+  }
+
+  .projects {
+    .label {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      & > * {
+        background: #FFFFFF4D;
+        border-radius: 12px;
+        display: inline-block;
+        padding: 8px;
+      }
+    }
+  }
+
+  .modernization .green-bg {
+    background: radial-gradient(#DAF8CC 10%, #fff 63%);
+  }
+
+  .future {
+    background: linear-gradient(90.39deg, #B3D7FF 0.29%, #8EBEF2 34.41%, #0153B5 99.64%);
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+    .glow {
+      top: -86px;
+      scale: 1.5;
+    }
+  }
+}
