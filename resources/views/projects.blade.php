@@ -4,7 +4,7 @@
 @section('content')
 
 <section id="main" class="container 2xl:max-w-6xl xl:max-w-6xl mx-auto max-lg:mt-24 max-md:text-center">
-  <div class="initiative flex flex-col gap-12 xl:gap-0 xl:flex-row relative xl:pb-60">
+  <div class="initiative flex flex-col gap-12 xl:gap-0 xl:flex-row relative mt-6 xl:pb-60">
     <div>
       <h2 class="text-4xl font-extrabold mb-6 lg:mt-36">КЛЮЧЕВЫЕ <b class="text-gradient">ИНИЦИАТИВЫ</b></h2>
       <p>Наша компания реализует проекты, направленные на решение<br>основных проблем в энергетической отрасли.</p>
@@ -17,8 +17,8 @@
     </div>
 
     <div class="relative xl:hidden mx-auto pb-5">
-      <img id="initiative-zap-mobile" class="absolute h-1/3 bottom-16 -left-10" src="{{asset('images/projects/thunder.svg')}}">
-      <img id="initiative-grid-solution-mobile" class="absolute h-2/5 right-10 bottom-10" src="{{asset('images/projects/initiative-grid-solution.png')}}">
+      <img id="initiative-zap-mobile" class="absolute h-1/3 bottom-16 -left-2" src="{{asset('images/projects/thunder.svg')}}">
+      <img id="initiative-grid-solution-mobile" class="absolute h-2/5 right-6 bottom-8" src="{{asset('images/projects/initiative-grid-solution.png')}}">
       <img id="initiative-bg-1-mobile" class="bg max-h-86 max-w-[90%] mx-auto w-auto w-auto" src="{{asset('images/projects/initiative-bg-1.png')}}" width="620">
     </div>
 
