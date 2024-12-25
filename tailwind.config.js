@@ -16,6 +16,11 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
+        listStyleType: {
+          none: 'none',
+          disc: 'disc',
+          decimal: 'decimal',
+        }
     },
     plugins: [
       require('flowbite/plugin')
