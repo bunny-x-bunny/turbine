@@ -1,7 +1,9 @@
 .page-news {
   .news .grid {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    &>* { grid-column: span 3; }
-    &>:nth-child(4n + 2), &>:nth-child(4n + 3) { grid-column: span 4; }
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      & >* { grid-column: span 3; }
+      &>:nth-child(4n + 2), &>:nth-child(4n + 3) { grid-column: span 4; }
+    }
   }
 }

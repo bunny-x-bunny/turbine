@@ -4,10 +4,12 @@
 @section('content')
 
 <section id="main" class="container 2xl:max-w-6xl xl:max-w-6xl mx-auto max-lg:mt-24 max-md:text-center">
-  <div class="future flex items-center w-full linear-gradient text-white p-9 rounded-b-[60px]">
-    <div class="basis-1/2 mr-12 font-medium">
+  <div class="future flex max-md:flex-col max-md:gap-5 items-center w-full linear-gradient text-white p-9 rounded-b-[60px]">
+    <div class="basis-1/2 md:mr-12 font-medium">
       <h2 class="text-4xl font-extrabold mb-6">БУДУЩИЕ ИНИЦИАТИВЫ</h2>
-      <p>Мы регулярно публикуем обновления о ходе проекта, а также информацию о новых партнёрствах и социальных программах, связанных с модернизацией ТЭЦ.</p></div>
+      <p>Мы регулярно публикуем обновления о ходе проекта, а также информацию о новых партнёрствах и социальных программах, связанных с модернизацией ТЭЦ.</p>
+    </div>
+    
     <div class="basis-1/2 flex justify-center">
       <img src="{{asset('images/news/future.svg')}}" class="w-[420px] -mb-9">
     </div>
