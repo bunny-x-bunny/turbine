@@ -7,7 +7,7 @@
       <a href="#">Партнёры</a>
       <a href="{{route('stats')}}">Основные показатели</a>
       <a href="{{route('news')}}">Новости</a>
-      <a href="#">Инвесторам</a>
+      <a href="{{route('invest')}}">Инвесторам</a>
       <a href="{{route('contact')}}">Контакты</a>
     </nav>
     <button type="button" class="btn linear-gradient">Связаться с нами</button>
