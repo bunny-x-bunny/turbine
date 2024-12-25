@@ -3,7 +3,7 @@
 
 @section('content')
 
-<section id="main" class="container 2xl:max-w-6xl xl:max-w-6xl mx-auto max-lg:mt-24 max-md:text-center">
+<section id="main" class="container lg:px-5 2xl:max-w-6xl xl:max-w-6xl mx-auto max-lg:mt-24 max-md:text-center">
   <div class="why mt-28 relative">
     <div class="bg absolute max-w-full z-[-1] w-[724px] h-[686px] left-[-282px] top-[-180px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#E6F9FD] via-transparent to-transparent"></div>
     <h2 class="max-sm:text-3.5xl text-4xl font-extrabold mb-2">ПОЧЕМУ СТОИТ <b class="text-gradient">ИНВЕСТИРОВАТЬ?</b></h2>
@@ -41,8 +41,7 @@
           w-full
           h-full
           z-[-1]
-          lef-0
-          lg:right-[-26%]
+          right-0
           top-[-28%]
           bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
           from-[#97F57E33]

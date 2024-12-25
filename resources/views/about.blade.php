@@ -3,7 +3,7 @@
 
 @section('content')
 
-<section id="main" class="container 2xl:max-w-6xl xl:max-w-6xl mx-auto max-lg:mt-24 max-md:text-center">
+<section id="main" class="container lg:px-5 2xl:max-w-6xl xl:max-w-6xl mx-auto max-lg:mt-24 max-md:text-center">
 
   <div class="about flex max-md:flex-col gap-12 items-center w-full linear-gradient text-white p-9">
     <div class="basis-1/2 font-medium">

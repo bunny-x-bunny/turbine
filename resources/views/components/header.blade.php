@@ -9,7 +9,7 @@
 ])
 
 <header>
-  <div class="max-lg:hidden lg:flex container 2xl:max-w-6xl xl:max-w-6xl mx-auto mt-3">
+  <div class="max-lg:hidden lg:flex container 2xl:max-w-6xl xl:max-w-6xl mx-auto mt-3 lg:px-5">
     <nav class="flex max-w-screen-lg space-x-10 mx-auto items-center justify-between text-sm">
       @foreach($menu as $route => $trans)
         <a href="{{route($route)}}" class="{{ Request::routeIs($route) ? 'font-bold' : '' }}">

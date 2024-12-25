@@ -3,7 +3,7 @@
 
 @section('content')
 
-<section id="main" class="container 2xl:max-w-6xl xl:max-w-6xl mx-auto max-lg:mt-24 max-md:text-center">
+<section id="main" class="container lg:px-5 2xl:max-w-6xl xl:max-w-6xl mx-auto max-lg:mt-24 max-md:text-center">
   <div class="stats mt-28 relative">
     <h2 class="text-4xl font-extrabold mb-2"><b class="text-gradient">СВЯЖИТЕСЬ С НАМИ</b></h2>
     <p class="text-sm">Мы всегда готовы ответить на ваши вопросы и предложить решения:</p>
