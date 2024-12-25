@@ -14,7 +14,7 @@
   @vite(['resources/css/app.scss', 'resources/js/app.js'])
   <script src="{{asset('js/flowbite.min.js')}}"></script>
 </head>
-<body class="antialiased page-{{$view_name}}">
+<body class="antialiased page-{{$view_name}} overflow-x-hidden">
 
 @include('components/header')
 @yield('content')

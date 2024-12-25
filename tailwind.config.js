@@ -24,6 +24,11 @@ export default {
                 }]
             }
         },
+        listStyleType: {
+          none: 'none',
+          disc: 'disc',
+          decimal: 'decimal',
+        }
     },
     plugins: [
       require('flowbite/plugin')

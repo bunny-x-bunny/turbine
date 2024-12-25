@@ -7,6 +7,10 @@
 @use 'pages/home';
 @use 'pages/about';
 @use 'pages/projects';
+@use 'pages/stats';
+@use 'pages/contact';
+@use 'pages/news';
+@use 'pages/invest';
 
 @tailwind base;
 @tailwind components;

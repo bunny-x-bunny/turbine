@@ -15,7 +15,7 @@
     <div class="basis-2/5 box radial-gradient p-8 max-lg:mt-8 max-sm:px-4">
       <h3 class="text-white text-4xl font-bold mb-6">О Нас</h3>
       <p class="text-white text-lg">ОАО «Среднеазиатский Инвестиционный Холдинг» - компания, основанная в 2024 году для развития и финансирования проектов в области энергетики, инфраструктуры, сельского хозяйства и недвижимости в странах Центральной Азии, являющихся членами TDT (Организации тюркских государств).</p>
-      <button type="button" class="btn bg-white text-gray-900 mt-6 lg:mt-20">Узнать больше</button>
+      <a href="{{route('about')}}" class="btn inline-block bg-white text-gray-900 mt-6 lg:mt-20">Узнать больше</a>
     </div>
   </div>
 
