@@ -1,6 +1,6 @@
 .page-projects {
-  .bg { 
-    z-index: -1; 
+  .bg {
+    z-index: -1;
   }
 
   .initiative {
@@ -50,6 +50,13 @@
     .glow {
       top: -86px;
       scale: 1.5;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .future .glow {
+      top: 46px;
+      scale: 3;
     }
   }
 }
