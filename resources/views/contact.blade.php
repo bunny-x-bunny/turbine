@@ -26,9 +26,9 @@
         </div>
         <h4 class="font-bold text-lg mt-4 mb-2">{{__('Контакты')}}</h4>
         <ul class="leading-tight text-sm text-left list-disc pl-6">
-          <li><b>{{__('Адрес офиса')}}:</b> {{__('Бишкек, Кыргызстан, ул. Абдумомунова, 25')}}.</li>
-          <li><b>{{__('Телефон')}}:</b> +996 (XXX) XXX-XXX</li>
-          <li><b>{{__('Электронная почта')}}:</b> ceo@ortaasyainvest.com</li>
+          <li><b>{{__('Адрес офиса')}}:</b> {!!__('Проспект Чынгыза Айтматова, <br>243 - БЦ "Бакай Банк", 4 этаж')!!}.</li>
+          <li><b>{{__('Телефон')}}:</b> <a href="tel:+996509222299">+996 509 222 299</a></li>
+          <li><b>{{__('Электронная почта')}}:</b> <a href="mailto:ceo@ortaasyainvest.com">ceo@ortaasyainvest.com</a></li>
         </ul>
       </div>
     </div>
