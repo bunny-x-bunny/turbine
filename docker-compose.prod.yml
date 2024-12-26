@@ -15,5 +15,6 @@ services:
       - '127.0.0.1:8081:80'
     environment:
         WWWUSER: '${WWWUSER}'
+        WWWGROUP: '${WWWGROUP}'
         IGNITION_LOCAL_SITES_PATH: '${PWD}'
     restart: always

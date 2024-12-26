@@ -2,7 +2,10 @@
 #WORKDIR /var/www/html
 #COPY . .
 #RUN npm install && npm run build && rm -rf node_modules
-
+ARG WWWUSER=1000
+ARG WWWGROUP=1000
+ENV WEB_DOCUMENT_ROOT /var/www/html/public
+ENV APP_ENV production
 
 FROM dwchiang/nginx-php-fpm:8.3.12-fpm-alpine3.20-nginx-1.27.1 as final
 
@@ -31,14 +34,26 @@ RUN docker-php-ext-install \
         xml
 # Use the default production configuration
 COPY ".docker/php.ini" "$PHP_INI_DIR/php.ini"
+COPY ".docker/docker-fpm.ini" "$PHP_INI_DIR/conf.d/docker-fpm.ini"
 
 #RUN mkdir -p /var/log/nginx/logs && chmod -R a+w /var/log/nginx
 
 # Copy Composer binary from the Composer official Docker image
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-ENV WEB_DOCUMENT_ROOT /var/www/html/public
-ENV APP_ENV production
+RUN addgroup \
+    --gid "$WWWGROUP" \
+    "app" \
+&& adduser \
+    --disabled-password \
+    --gecos "" \
+    --home "$(pwd)" \
+    --ingroup "app" \
+    --no-create-home \
+    --uid "$WWWUSER" \
+    app
+
+
 WORKDIR /var/www/html
 #COPY --from=vite-build /var/www/html ./
 
@@ -48,4 +63,4 @@ WORKDIR /var/www/html
 #  && php artisan view:cache \
 #  && php artisan optimize
 #
-#RUN chown -R www-data:www-data ./storage
+#RUN chown -R app:app ./storage
