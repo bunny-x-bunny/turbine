@@ -1,4 +1,4 @@
-<footer class="mt-16 pt-16 text-center text-sm text-white">
+<footer class="mt-16 pt-16 lg:px-5 text-center text-sm text-white">
   <div class="container 2xl:max-w-6xl xl:max-w-6xl mx-auto flex justify-between space-x-6 text-left
     max-lg:flex-col max-lg:items-center max-lg:text-center max-lg:space-x-0
   ">

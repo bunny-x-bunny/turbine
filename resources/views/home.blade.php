@@ -3,7 +3,7 @@
 
 @section('content')
 
-<section id="main" class="container 2xl:max-w-6xl xl:max-w-6xl mx-auto mt-20 max-lg:mt-24 max-md:text-center">
+<section id="main" class="container lg:px-5 2xl:max-w-6xl xl:max-w-6xl mx-auto mt-20 max-lg:mt-24 max-md:text-center">
   <h1 class="text-6xl max-sm:text-4xl">
     ОАО «<b class="text-gradient">ORTA ASYA</b> ИНВЕСТИЦИОННЫЙ ХОЛДИНГ»
   </h1>
