@@ -48,6 +48,15 @@
     }
   }
 
+  .proposal {
+    &>:nth-child(2) {
+      box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.2), 13px 38px 57px 0 #36aedd2e;
+    }
+    &>:nth-child(3) {
+      box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.2), -33px 71px 76px 0 #3dd96f33;
+    }
+  }
+
   .agenda {
     & > div {
       display: flex;

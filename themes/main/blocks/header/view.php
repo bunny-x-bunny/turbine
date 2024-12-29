@@ -13,9 +13,10 @@
   <div class="max-lg:hidden lg:flex container 2xl:max-w-6xl xl:max-w-6xl mx-auto mt-3 lg:px-5">
     <nav class="flex max-w-screen-lg space-x-10 max-xl:space-x-5 mx-auto items-center justify-between text-sm">
       <?php
+        //dd(Request::path());
         foreach($menu as $route => $trans) {
           $url = route($route);
-          $bold = Request::routeIs($route) ? 'font-bold' : '';
+          $bold = $page->get('name') == $route ? 'font-bold' : '';
           echo "<a href='$url' class='$bold'>$trans</a>";
         }
       ?>
