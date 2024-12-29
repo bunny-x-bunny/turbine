@@ -4,13 +4,23 @@
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bunny-x-bunny/Laravel-Pagebuilder.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bunny-x-bunny/PHPageBuilder.git"
+        }
+    ],
     "require": {
         "php": "^8.2",
-        "hansschouten/laravel-pagebuilder": "^0.30.0",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
         "outhebox/blade-flags": "^1.5",
-        "reliqarts/laravel-auto-translator": "^1.0"
+        "reliqarts/laravel-auto-translator": "^1.0",
+        "bunny-x-bunny/laravel-pagebuilder": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -68,6 +78,6 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
