@@ -153,12 +153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bunny-x-bunny/Laravel-Pagebuilder.git",
-                "reference": "c95208eae476bb02e4eeb88e9c9abd01ce293e04"
+                "reference": "57896fc62e8f391f255640162b72fc18f10bceba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bunny-x-bunny/Laravel-Pagebuilder/zipball/c95208eae476bb02e4eeb88e9c9abd01ce293e04",
-                "reference": "c95208eae476bb02e4eeb88e9c9abd01ce293e04",
+                "url": "https://api.github.com/repos/bunny-x-bunny/Laravel-Pagebuilder/zipball/57896fc62e8f391f255640162b72fc18f10bceba",
+                "reference": "57896fc62e8f391f255640162b72fc18f10bceba",
                 "shasum": ""
             },
             "require": {
@@ -200,7 +200,7 @@
             "support": {
                 "source": "https://github.com/bunny-x-bunny/Laravel-Pagebuilder/tree/master"
             },
-            "time": "2024-12-29T16:18:39+00:00"
+            "time": "2025-01-03T10:57:50+00:00"
         },
         {
             "name": "bunny-x-bunny/phpagebuilder",
