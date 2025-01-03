@@ -18,8 +18,6 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "outhebox/blade-flags": "^1.5",
-        "reliqarts/laravel-auto-translator": "^1.0",
         "bunny-x-bunny/laravel-pagebuilder": "dev-master"
     },
     "require-dev": {

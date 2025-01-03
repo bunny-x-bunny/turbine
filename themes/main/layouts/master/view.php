@@ -24,6 +24,13 @@ require_once __DIR__ . '/../../../../helpers.php';
   <script src="<?=asset('js/flowbite.min.js')?>"></script>
 </head>
 <body class="antialiased page-<?=$page->get('name')?> overflow-x-hidden">
+[block slug="header"]
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ru'});
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <?= $body ?>
 

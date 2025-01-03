@@ -21,7 +21,6 @@
         }
       ?>
     </nav>
-    <x-language-switcher id="language_btn1" />
     <a href="<?=route('contact')?>" class="btn linear-gradient ml-4"><?=__('Связаться с нами')?></a>
   </div>
 
@@ -31,7 +30,6 @@
           <!--img src="" class="h-8" alt="Logo" /-->
       </a>
       <div class="flex space-x-3 rtl:space-x-reverse">
-          <x-language-switcher id="language_btn2" />
           <a href="<?=route('contact')?>" class="btn linear-gradient"><?=__('Связаться с нами')?></a>
           <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
             <span class="sr-only"><?=__('Открыть меню')?></span>
