@@ -52,8 +52,8 @@ return [
         'use_login' => true,
         'class' => PHPageBuilder\Modules\Auth\Auth::class,
         'url' => '/admin/auth',
-        'username' => 'admin',
-        'password' => 'password'
+        'username' => env('PAGEBUILDER_USER'),
+        'password' => env('PAGEBUILDER_PASSWORD')
     ],
 
     /*

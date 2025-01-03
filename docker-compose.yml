@@ -23,6 +23,7 @@ services:
             - sail
         depends_on:
             - mailpit
+            - mariadb
     mailpit:
         image: 'axllent/mailpit:latest'
         ports:
