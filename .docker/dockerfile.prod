@@ -33,7 +33,7 @@ RUN set -ex; \
     echo "post_max_size = 32M"; \
     echo "; Configure Opcache for Containers"; \
     echo "opcache.enable = On"; \
-    echo "opcache.validate_timestamps = Off"; \
+    echo "opcache.validate_timestamps = On"; \
     echo "; Configure Opcache Memory (Application-specific)"; \
     echo "opcache.memory_consumption = 32"; \
   } > "$PHP_INI_DIR/conf.d/cloud-run.ini"
@@ -46,7 +46,7 @@ RUN docker-php-ext-install \
         xml
 # Use the default production configuration
 COPY ".docker/php.ini" "$PHP_INI_DIR/php.ini"
-#COPY ".docker/docker-fpm.ini" "$PHP_INI_DIR/conf.d/docker-fpm.ini"
+COPY ".docker/docker-fpm.ini" "$PHP_INI_DIR/../php-fpm.d/www.conf"
 
 #RUN mkdir -p /var/log/nginx/logs && chmod -R a+w /var/log/nginx
 
