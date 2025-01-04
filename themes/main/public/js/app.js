@@ -9,11 +9,11 @@ $(function (){
           $("<div class='swiper-slide grid gap-3 text-white font-semibold'></div>")
             .append(news.slice(i, i + chunkSize)));
     }
-    $('.page-news .news > :nth-child(1)')
-      .addClass('swiper')
+    $('.page-news .news')
+      .append($('<div class="swiper"></div>')
       .append(slide_wrapper)
       .append('<div class="swiper-button-prev"></div>')
-      .append('<div class="swiper-button-next"></div>');
+      .append('<div class="swiper-button-next"></div>'));
 
    var swiper = new Swiper(".swiper", {
       slidesPerView: 1,
