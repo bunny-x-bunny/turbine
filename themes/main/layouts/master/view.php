@@ -19,6 +19,10 @@ require_once __DIR__ . '/../../../../helpers.php';
 
   <!-- Styles / Scripts -->
   <link rel="stylesheet" href="<?= phpb_theme_asset('css/style.css') ?>">
+  <link rel="stylesheet" href="<?= phpb_theme_asset('css/swiper-bundle.min.css') ?>">
+  <script src="<?= phpb_theme_asset('js/jquery-3.7.1.slim.min.js') ?>"></script>
+  <script src="<?= phpb_theme_asset('js/swiper-bundle.min.js') ?>"></script>
+  <script src="<?= phpb_theme_asset('js/app.js') ?>"></script>
   <?= vite('resources/css/app.scss') ?>
   <?= vite('resources/js/app.js') ?>
 

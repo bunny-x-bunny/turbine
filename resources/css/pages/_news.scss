@@ -6,4 +6,13 @@
       &>:nth-child(4n + 2), &>:nth-child(4n + 3) { grid-column: span 4; }
     }
   }
+  .swiper {
+    overflow: visible;
+    &-button {
+      &-next, &-prev {
+        top: calc(50% + 33px);
+        font-weight: bold;
+      }
+    }
+  }
 }
