@@ -20,5 +20,13 @@ $(function (){
       spaceBetween: 12,
       freeMode: true,
     });
+
+    $('.news .grid > *').each(function() {
+      var href = $(this).find('p a').first().attr('href');
+      if (href)
+        $(this).on('click', function() {
+          window.location = href;
+        }).css('cursor', 'pointer');
+    });
   }
 })

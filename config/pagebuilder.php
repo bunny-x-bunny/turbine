@@ -11,7 +11,7 @@ return [
      */
     'general' => [
         'base_url' => env('APP_URL'),
-        'language' => 'en',
+        'language' => 'ru',
         'assets_url' => '/assets',
         'uploads_url' => '/uploads'
     ],

@@ -1,3 +1,7 @@
 .news .grid > [phpb-blocks-container] {
 
 }
+
+.news .grid p a {
+	text-decoration: underline;
+}
