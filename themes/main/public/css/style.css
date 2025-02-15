@@ -5,3 +5,8 @@
 .news .grid p a {
 	text-decoration: underline;
 }
+
+.bg-gradient {
+	pointer-events: none;
+	user-select: none;
+}
