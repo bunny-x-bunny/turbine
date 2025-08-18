@@ -25,6 +25,14 @@ require_once __DIR__ . '/../../../../helpers.php';
   <?= vite('resources/js/app.js') ?>
 
   <script src="<?=asset('js/flowbite.min.js')?>"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NDLVM35W');</script>
+  <!-- End Google Tag Manager -->
 </head>
 <body class="antialiased page-<?=$page->get('name')?> overflow-x-hidden">
 [block slug="header"]
@@ -33,14 +41,6 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'ru'});
 }
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NDLVM35W');</script>
-<!-- End Google Tag Manager -->
 
 <?= $body ?>
 
